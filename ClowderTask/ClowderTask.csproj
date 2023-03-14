@@ -111,6 +111,12 @@
     <EmbeddedResource Include="View\HomeView.resx">
       <DependentUpon>HomeView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\SettingsView.resx">
+      <DependentUpon>SettingsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ShopView.resx">
+      <DependentUpon>ShopView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\TaskView.resx">
       <DependentUpon>TaskView.cs</DependentUpon>
     </EmbeddedResource>

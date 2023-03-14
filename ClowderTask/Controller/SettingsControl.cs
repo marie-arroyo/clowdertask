@@ -8,5 +8,19 @@ namespace ClowderTask.Controller
 {
     class SettingsControl
     {
+        public void SetUserName(string userName)
+        {
+
+        }
+
+        public void SetCatName(string catName)
+        {
+
+        }
+
+        public void SetPassword(string password)
+        {
+
+        }
     }
 }

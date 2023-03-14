@@ -8,17 +8,23 @@ namespace ClowderTask.Controller
 {
     class HomeControl
     {
-        void OpenSettingsView()
+        public void OpenSettingsView()
         {
 
         }
 
-        void OpenShopView()
+        public void OpenShopView()
         {
 
         }
 
-        void OpenTaskView()
+        public void OpenTaskView()
+        {
+
+        }
+
+        // CatClick() should have a small reaction from the cat upon clicking to add to interactivity
+        void CatClick()
         {
 
         }
