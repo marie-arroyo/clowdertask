@@ -26,5 +26,15 @@ namespace ClowderTask.View
         {
 
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

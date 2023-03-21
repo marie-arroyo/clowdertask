@@ -58,15 +58,14 @@ namespace ClowderTask.View
             this.shopButton = new System.Windows.Forms.Button();
             this.settingsButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // taskButton
             // 
+            this.taskButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.taskButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.taskButton.Location = new System.Drawing.Point(108, 342);
+            this.taskButton.Location = new System.Drawing.Point(136, 342);
             this.taskButton.Name = "taskButton";
             this.taskButton.Size = new System.Drawing.Size(104, 49);
             this.taskButton.TabIndex = 0;
@@ -76,8 +75,9 @@ namespace ClowderTask.View
             // 
             // shopButton
             // 
+            this.shopButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.shopButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.shopButton.Location = new System.Drawing.Point(311, 342);
+            this.shopButton.Location = new System.Drawing.Point(331, 342);
             this.shopButton.Name = "shopButton";
             this.shopButton.Size = new System.Drawing.Size(104, 49);
             this.shopButton.TabIndex = 1;
@@ -87,6 +87,7 @@ namespace ClowderTask.View
             // 
             // settingsButton
             // 
+            this.settingsButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.settingsButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.settingsButton.Location = new System.Drawing.Point(530, 342);
             this.settingsButton.Name = "settingsButton";
@@ -98,40 +99,30 @@ namespace ClowderTask.View
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(136, 71);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(498, 247);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(13, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(199, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // HomeView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.settingsButton);
             this.Controls.Add(this.shopButton);
             this.Controls.Add(this.taskButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(604, 464);
             this.Name = "HomeView";
             this.Text = "ClowderTask";
-            this.Load += new System.EventHandler(this.HomeView_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.HomeView_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -142,6 +133,5 @@ namespace ClowderTask.View
         private System.Windows.Forms.Button shopButton;
         private System.Windows.Forms.Button settingsButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
