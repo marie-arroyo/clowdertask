@@ -33,10 +33,10 @@ namespace ClowderTask.View
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -84,6 +84,15 @@ namespace ClowderTask.View
             this.tableLayoutPanel1.TabIndex = 2;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(316, 291);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(77, 32);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Buy";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.MenuBar;
@@ -117,15 +126,6 @@ namespace ClowderTask.View
             this.button1.Text = "Buy";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(316, 291);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 32);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Buy";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -142,8 +142,9 @@ namespace ClowderTask.View
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ShopView";
-            this.Text = "ShopView";
+            this.Text = "ClowderTask - Points Shop";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

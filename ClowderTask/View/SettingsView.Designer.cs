@@ -29,6 +29,7 @@ namespace ClowderTask.View
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsView));
             this.userLabel = new System.Windows.Forms.Label();
             this.catLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
@@ -131,8 +132,9 @@ namespace ClowderTask.View
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.catLabel);
             this.Controls.Add(this.userLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SettingsView";
-            this.Text = "SettingsView";
+            this.Text = "ClowderTask - Settings";
             this.Load += new System.EventHandler(this.SettingsView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
